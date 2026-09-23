@@ -43,25 +43,11 @@
       gap: 2rem;
     }
 
-    /* Duas colunas no computador */
-    .content {
-      width: 100%;
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-      gap: 1.25rem;
-      align-items: center;
-    }
-
-    .spotify-column {
-      width: 100%;
-    }
-
-    .spotify-column iframe {
-      width: 100%;
-      display: block;
-      border: 0;
-      border-radius: 12px;
-    }
+   .content {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
 
     .profile-column {
       width: 100%;
@@ -236,10 +222,6 @@
         border: 0;
       }
 
-      .spotify-column {
-        order: 2;
-      }
-
       .profile-column {
         order: 1;
       }
@@ -256,19 +238,6 @@
   <main class="page">
 
     <div class="content">
-
-      <!-- Spotify incorporado à esquerda -->
-      <section class="spotify-column">
-        <iframe
-          src="https://open.spotify.com/embed/album/7j1np8DQP1LYj5WUlyo47I?utm_source=generator"
-          height="352"
-          frameborder="0"
-          allowfullscreen
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="Spotify player">
-        </iframe>
-      </section>
 
       <!-- Perfil e links à direita -->
       <section class="profile-column">
